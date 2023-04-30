@@ -1,2 +1,16 @@
 {
         "editor.fontSize": 18,
+        "code-runner.saveFileBeforeRun": true,
+        "editor.cursorStyle": "line-thin",
+        "explorer.confirmDragAndDrop": false,
+        "files.autoSave": "afterDelay",
+        "editor.wordWrap": "on",
+        "editor.language.brackets": [
+        
+        ],
+        "remote.SSH.defaultExtensions": [
+            "gitpod.gitpod-remote-ssh"
+        ],
+        "diffEditor.wordWrap": "on",
+        "liveServer.settings.donotShowInfoMsg": true
+}
