@@ -11,6 +11,7 @@ word03 = {
     letter = 'england',
     categories = 'countries'
     }
+    
 word04 = {
     letter = 'france',
     categories = 'countries'
@@ -149,17 +150,17 @@ word32 = {
 
 word33 = {
     letter = 'suits',
-    categories = 'tv-show'
+    categories = 'tvShow'
 },
 
 word34 = {
     letter = 'outlander',
-    categories = 'tv-show'
+    categories = 'tvShow'
 },
 
 word35 = {
     letter = 'psych',
-    categories = 'tv-show'
+    categories = 'tvShow'
 }
 
 word36 = {
@@ -169,22 +170,22 @@ word36 = {
 
 word37 = {
     letter = 'fleabag',
-    categories = 'tv-show'
+    categories = 'tvShow'
 },
 
 word38 = {
     letter = 'hannibal',
-    categories = 'tv-show'
+    categories = 'tvShow'
 },
 
 word39 = {
     letter = 'superGirl',
-    categories = 'tv-show'
+    categories = 'tvShow'
 },
 
 word40 = {
     letter = 'twilight',
-    categories = 'tv-show'
+    categories = 'tvShow'
 }
 ];
 
@@ -192,6 +193,3 @@ function findTheWord(){
     let indexWord = parseInt(Math.random() * words.length)
     console.log(indexWord)
 }
-
-let nome = 'canada'
-console.log(nome)
