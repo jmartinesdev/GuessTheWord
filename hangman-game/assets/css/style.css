@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Shadows+Into+Light&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1f07;    
+}
+
+:root {
+    --font: 'Shadows Into Light', cursive;
+    --font01: 'Lato', sans-serif;
+    --cor01: #83e1ad;
+    --cor02: #4c36ca98;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+}
+
+header {
+    text-align: center;
+    font-family: var(--font);
+    color: var(--cor03);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+#main-container {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: var(--font);
+    text-align: center;
+    color: var(--cor04);
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+}
+
+#categories {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.letters-categories {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font01);
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.letter {
+    border-bottom: 3px solid var(--cor01);
+    width: 40px;
+    margin: 20px;
+    justify-content: center;
+}
+
+#keyboard {
+    width: 100%;
+    height: 30vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.keys-touch button {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 5px;
+    border-radius: 8px;
+    border: 2px solid var(--cor01);
+    color: var(--cor05);
+    box-shadow: 1px 1px #2fa866;
+}
+
+button:hover {
+    transform: scale(1.5);
+}
