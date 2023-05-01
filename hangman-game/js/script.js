@@ -1,4 +1,7 @@
-const words = [
+let wordsCategories;
+let wordsLetter;
+
+let words = [
     word001 = {
         letter: 'france',
         categories: 'countries'
@@ -201,6 +204,19 @@ const words = [
 
 findTheWord()
 function findTheWord(){
-    let indexWord = parseInt(Math.random() * words.length)
-    console.log(indexWord)
+    let indexWords = parseInt(Math.random() * words.length)
+
+    wordsLetter = words[indexWords].letter;
+    wordsCategories = words[indexWords].categories;
+    console.log(wordsLetter)
+    console.log(wordsCategories)
+}
+
+screenWord()
+function screenWord() {
+    let categorie = document.getElementById("categories");
+    categorie.innerHTML = wordsCategories;
+
+    let onScreen = document.getElementById("letters-categories");
+    onScreen.innerHTML = wordsLetter;
 }
