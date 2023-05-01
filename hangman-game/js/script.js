@@ -1,3 +1,4 @@
+let chances = 5;
 let myList = [];
 let wordsCategories;
 let wordsLetter;
@@ -221,13 +222,57 @@ function screenWord() {
     let onScreen = document.getElementById("letters-categories");
     onScreen.innerHTML = "";
 
-    for(i = 0; i < wordsLetter.length; ++){
+    for(i = 0; i < wordsLetter.length; i++){
         if(myList[i] == undefined){
             myList[i] = "&nbsp;"
-            screenWord.innerHTML = screenWord.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+            onScreen.innerHTML = onScreen.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
         }
         else{
-            screenWord.innerHTML = screenWord.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+            onScreen.innerHTML = onScreen.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
         }
     }
 }
+
+function letterSelect(letter01){
+    if(chances > 0)
+    {
+
+        letterStyle("letter-" + letter01);
+        checkList(letter01);
+    }    
+}
+
+function letterStyle(letter){
+    document.getElementById(letter).style.background = "#063d1e";
+    document.getElementById(letter).style.color = "#ffffff"
+}
+
+function checkList(letter01){
+    let position = wordsLetter.indexOf(letter01)
+    if(position < 0){
+        chances -- 
+        //write here
+    }
+    else{
+        for(i = 0; i < wordsLetter.length; i++)
+        {
+            if(wordsLetter[i] == letter01){
+                myList[i] = wordsLetter;
+            }
+        }
+    }
+
+    let youWon = true;
+        for(i = 0; i < wordsLetter.length; i++){
+            if(wordsLetter[i] != myList[i]){
+                youWon = false;
+            }
+        }
+
+        if(youWon == true)
+        {
+            //write here
+        }
+}
+
+
