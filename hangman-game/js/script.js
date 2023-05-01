@@ -1,3 +1,4 @@
+let myList = [];
 let wordsCategories;
 let wordsLetter;
 
@@ -218,5 +219,15 @@ function screenWord() {
     categorie.innerHTML = wordsCategories;
 
     let onScreen = document.getElementById("letters-categories");
-    onScreen.innerHTML = wordsLetter;
+    onScreen.innerHTML = "";
+
+    for(i = 0; i < wordsLetter.length; ++){
+        if(myList[i] == undefined){
+            myList[i] = "&nbsp;"
+            screenWord.innerHTML = screenWord.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+        }
+        else{
+            screenWord.innerHTML = screenWord.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+        }
+    }
 }
