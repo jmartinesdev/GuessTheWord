@@ -3,7 +3,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0a1f07;    
+    background-color: #83e1ad;    
+    
 }
 
 :root {
@@ -20,25 +21,21 @@ body {
 header {
     text-align: center;
     font-family: var(--font);
-    color: var(--cor03);
+    color: var(--cor06);
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
+    margin-top: 4rem;
 }
 
 #main-container {
-    width: 100%;
+    width: 70%;
     height: 80vh;
     margin: 0 auto;
     border-radius: 20px;
-}
-
-h2 {
-    font-family: var(--font);
-    text-align: center;
-    color: var(--cor04);
-    font-size: 2.5rem;
-    letter-spacing: 0.5rem;
+    background-color: #2fa866;
+    margin-top: 4rem;
+    margin-bottom: 40px;
 }
 
 #categories {
@@ -47,8 +44,9 @@ h2 {
     text-transform: uppercase;
     font-family: var(--font);
     font-size: 2.5rem;
-    color: #2fa866;
+    color: var(--cor06);
     text-align: center;
+    padding: 40px;
 }
 
 #letters-categories {
@@ -76,14 +74,14 @@ h2 {
 
 #keyboard {
     width: 100%;
-    height: 30vw;
+    height: 30vh;
     text-align: center;
     margin-top: 20px;
 }
 
 .keys-touch button {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     cursor: pointer;
     font-family: var(--font);
     font-size: 1.3rem;
@@ -97,4 +95,59 @@ h2 {
 
 button:hover {
     transform: scale(1.5);
+}
+
+.teclas button:: :disabled{
+    cursor: not-allowed;
+}
+
+#btn-replay {
+    font-size: 15px;
+}
+
+.footer-container {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+#footer-flex div {
+    padding: 10px;
+    width: 30%;
+}
+
+.social-medias>li {
+    display: inline;
+    list-style: none;
+    padding: 0 40px;
+}
+
+.social-medias i {
+    color: var(--cor06);
+    justify-content: space-between;
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+#footer-flex h2 {
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+#footer-flex p {
+    text-align: center;
+    color: var(--cor05);
+    line-height: 40px;
+}
+
+.dev-footer {
+    font-family: var(--font);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    height: 30px;
+    width: 70%;
+    background-color: #2fa866;
+    margin: auto;
+    border-radius: 20px;
 }

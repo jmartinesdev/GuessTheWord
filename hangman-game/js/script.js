@@ -1,234 +1,211 @@
 let chances = 5;
-let myList = [];
+let myList = [''];
 let wordsCategories;
 let wordsLetter;
 
 let words = [
-    word001 = {
-        letter: 'france',
-        categories: 'countries'
+    {
+        letter: 'FRANCE',
+        categories: 'COUNTRIES'
     },
-    word002 = {
-        letter: 'germany',
-        categories:  'countries'
+    {
+        letter: 'GERMANY',
+        categories: 'COUNTRIES'
     },
-
-    word003 = {
-        letter: 'england',
-        categories: 'countries'
+    {
+        letter: 'ENGLAND',
+        categories: 'COUNTRIES'
     },
-        
-    word004 = {
-        letter: 'india',
-        categories: 'countries'
-    },    
-
-    word005 = {
-        letter: 'portugal',
-        categories: 'countries'
+    {
+        letter: 'INDIA',
+        categories: 'COUNTRIES'
+    },
+    {
+        letter: 'PORTUGAL',
+        categories: 'COUNTRIES'
     },
 
-    word006 = {
-        letter: 'spain',
-        categories: 'countries',
+    {
+        letter: 'SPAIN',
+        categories: 'COUNTRIES'
+    },
+    {
+        letter: 'BRAZIL',
+        categories: 'COUNTRIES'
+    },
+    {
+        letter: 'ARGENTINA',
+        categories: 'COUNTRIES'
+    },
+    {
+        letter: 'CHILE',
+        categories: 'COUNTRIES'
     },
 
-    word007 = {
-        letter: 'brazil',
-        categories: 'countries'
+    {
+        letter: 'CANADA',
+        categories: 'COUNTRIES'
+    },
+    {
+        letter: 'SAUSAGE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'COOKIE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'MELON',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'CUPCAKE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'CABBAGE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'SHRIMP',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'PORRIDGE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'PANCAKE',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'HAMBURGER',
+        categories: 'FOOD'
     },
 
-    word008 = {
-        letter: 'argentina',
-        categories: 'countries'
+    {
+        letter: 'RASPEBERRIES',
+        categories: 'FOOD'
+    },
+    {
+        letter: 'SAMSUNG',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'APPLE',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'PHILIPS',
+        categories: 'BRAND'
     },
 
-    word009 = {
-        letter: 'chile',
-        categories: 'countries'
+    {
+        letter: 'VODAFONE',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'TESCO',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'YOUTUBE',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'PLAYSTATION',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'LENOVO',
+        categories: 'BRAND'
     },
 
-    word010 = {
-        letter: 'canada',
-        categories: 'countries'
+    {
+        letter: 'HYUNDAI',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'ADIDAS',
+        categories: 'BRAND'
+    },
+    {
+        letter: 'FRIENDS',
+        categories: 'TVSHOW'
+    },
+    {
+        letter: 'GREYS-ANATOMY',
+        categories: 'TVSHOW'
+    },
+    {
+        letter: 'SUITS',
+        categories: 'TVSHOW'
     },
 
-    word011 = {
-        letter: 'sausages',
-        categories: 'food'
+    {
+        letter: 'OUTLANDER',
+        categories: 'TVSHOW'
     },
 
-    word012 = {
-        letter: 'cookie',
-        categories: 'food'
+    {
+        letter: 'PSYCH',
+        categories: 'TVSHOW'
     },
 
-    word013 = {
-        letter: 'melon',
-        categories: 'food'
+    {
+        letter: 'YOU',
+        categories: 'TVSHOW'
     },
 
-    word014 = {
-        letter: 'cupcake',
-        categories: 'food'
+    {
+        letter: 'FLEABAG',
+        categories: 'TVSHOW'
     },
 
-    word015 = {
-        letter: 'cabbage',
-        categories: 'food'
+    {
+        letter: 'HANNIBAL',
+        categories: 'TVSHOW'
     },
 
-    word016 = {
-        letter: 'shrimp',
-        categories: 'food'
+    {
+        letter: 'SUPERGIRL',
+        categories: 'TVSHOW'
     },
 
-    word017 = {
-        letter: 'porridge',
-        categories: 'food'
-    },
-
-    word018 = {
-        letter: 'pancake',
-        categories: 'food'
-    },
-
-    word019 = {
-        letter: 'hamburger',
-        categories: 'food'
-    },
-
-    word020 = {
-        letter: 'raspberries',
-        categories: 'food'
-    },
-
-    word021 = {
-        letter: 'samsung',
-        categories: 'brands'
-    },
-
-    word022 = {
-        letter: 'apple',
-        categories: 'brands'
-    },
-
-    word023 = {
-        letter: 'coca-cola',
-        categories: 'brands'
-    },
-
-    word024 = {
-        letter: 'vodafone',
-        categories: 'brands'
-    },
-
-    word025 = {
-        letter: 'tesco',
-        categories: 'brands'
-    },
-
-    word026 = {
-        letter: 'youtube',
-        categories: 'brands'
-    },
-
-    word027 = {
-        letter: 'playstation',
-        categories: 'brands'
-    },
-
-    word028 = {
-        letter: 'lenovo',
-        categories: 'brands'
-    },
-
-    word029 = {
-        letter: 'hyundai',
-        categories: 'brands'
-    },
-
-    word030 = {
-        letter: 'adidas',
-        categories: 'brands'
-    },
-
-    word031 = {
-        letter: 'friends',
-        categories: 'tvShow'
-    },
-
-    word032 = {
-        letter: 'greys anatomy',
-        categories: 'tvShow'
-    },
-
-    word033 = {
-        letter: 'suits',
-        categories: 'tvShow'
-    },
-
-    word034 = {
-        letter: 'outlander',
-        categories: 'tvShow'
-    },
-
-    word035 = {
-        letter: 'psych',
-        categories: 'tvShow'
-    },
-
-    word036 = {
-        letter: 'you',
-        categories: 'tvShow'
-    },
-
-    word037 = {
-        letter: 'fleabag',
-        categories: 'tvShow'
-    },
-
-    word038 = {
-        letter: 'hannibal',
-        categories: 'tvShow'
-    },
-
-    word039 = {
-        letter: 'superGirl',
-        categories: 'tvShow'
-    },
-
-    word040 = {
-        letter: 'twilight',
-        categories: 'tvShow'
+    {
+        letter: 'TWILIGHT',
+        categories: 'TVSHOW'
     }
 ];
 
-findTheWord()
+findTheWord();
 function findTheWord(){
-    let indexWords = parseInt(Math.random() * words.length)
+    let indexWords = parseInt(Math.random() * words.length);
 
     wordsLetter = words[indexWords].letter;
     wordsCategories = words[indexWords].categories;
-    console.log(wordsLetter)
-    console.log(wordsCategories)
+    console.log(wordsLetter);
+    console.log(wordsCategories);
 }
 
-screenWord()
+console.log([words]);
+
+screenWord();
 function screenWord() {
     let categorie = document.getElementById("categories");
     categorie.innerHTML = wordsCategories;
 
     let onScreen = document.getElementById("letters-categories");
-    onScreen.innerHTML = "";
+    onScreen.innerHTML = '';
 
     for(i = 0; i < wordsLetter.length; i++){
         if(myList[i] == undefined){
-            myList[i] = "&nbsp;"
-            onScreen.innerHTML = onScreen.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+
+        myList[i] = '';
+            onScreen.innerHTML = onScreen.innerHTML + '<div class="letter">' + myList[i] + '</div>';
         }
         else{
-            onScreen.innerHTML = onScreen.innerHTML + "<div class='letter'>" + myList[i] + "</div>"
+            onScreen.innerHTML = onScreen.innerHTML + '<div class="letter">' + myList[i] + '</div>';
         }
     }
 }
@@ -239,25 +216,31 @@ function letterSelect(letter01){
 
         letterStyle("letter-" + letter01);
         checkList(letter01);
+        screenWord();
     }    
+
 }
 
-function letterStyle(letter){
-    document.getElementById(letter).style.background = "#063d1e";
-    document.getElementById(letter).style.color = "#ffffff"
+function letterStyle(letter01){
+    document.getElementById(letter01).style.background = "#063d1e";
+    document.getElementById(letter01).style.color = "#ffffff";
 }
 
+checkList('letter01');
 function checkList(letter01){
-    let position = wordsLetter.indexOf(letter01)
+    let position = wordsLetter.indexOf(letter01);
     if(position < 0){
-        chances -- 
-        //write here
+        chances--;
+
+        if(chances == 0){
+            modalOpen("OPS!", "You lost!! The secret word is <br>" + wordsLetter);
+        }
     }
     else{
         for(i = 0; i < wordsLetter.length; i++)
         {
             if(wordsLetter[i] == letter01){
-                myList[i] = wordsLetter;
+                myList[i] = letter01;
             }
         }
     }
@@ -271,8 +254,28 @@ function checkList(letter01){
 
         if(youWon == true)
         {
-            //write here
+            modalOpen("Congrats", "You rock!! You won");
+            chances = 0;
         }
+
+
+    }
+
+function modalOpen(label, text){
+    let modalLabel = document.getElementById("myModalLabel")
+    modalLabel.innerText = label;
+
+    let modalBody = document.getElementById("modalBody")
+    modalBody.innerHTML = text;
+
+    $("#myModal").modal({
+        show:true
+    });
 }
+
+let restart = document.querySelector("#btn-replay")
+    restart.addEventListener("click", function() {
+        location.reload();
+    });
 
 
