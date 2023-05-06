@@ -97,7 +97,7 @@ button:hover {
     transform: scale(1.5);
 }
 
-.teclas button:: :disabled{
+.teclas button:disabled{
     cursor: not-allowed;
 }
 
